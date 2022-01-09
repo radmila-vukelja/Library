@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    padding-left: 50px;
+}
+
+.user-detail {
+    margin: 10px;
+}
+.detail{
+    display: flex;
+    justify-content: space-between;
+    width: 150%;
+
+    margin: 10px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+
+.updateData {
+    width: 300px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.back {
+    margin: 7px;
+    color: rgba(0, 88, 175, 0.568);
+    border: none;
+    background-color: whitesmoke;
+}
+
+button {
+    padding: 4px;
+    background-color: rgba(0, 88, 175, 0.568);
+    color: whitesmoke;
+    border: none;
+    width: 150px;
+}

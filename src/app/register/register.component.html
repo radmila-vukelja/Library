@@ -1,0 +1,61 @@
+<div class="container">
+    <mat-card>
+        <mat-card-header>
+           <mat-card-title>Registration</mat-card-title>
+        </mat-card-header>
+        <hr>
+        <br>
+        <div class="userData">
+            <mat-form-field class="mat-input" appearance="fill">
+                <mat-label>First name</mat-label>
+                <input matInput id="fname">
+            </mat-form-field>
+            <br>
+        </div>
+        <div class="userData">
+            <mat-form-field class="mat-input" appearance="fill">
+                <mat-label>Last name</mat-label>
+                <input matInput id="lname">
+            </mat-form-field>
+            <br>
+        </div>
+        <div class="userData">
+            <mat-form-field class="mat-input" appearance="fill">
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="picker" id="date">
+                <mat-datepicker-toggle matSuffix [for]="picker">
+                  <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                </mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            <br>
+        </div>
+        <div class="userData">
+            <mat-form-field class="mat-input" appearance="fill">
+                <mat-label>E-mail</mat-label>
+                <input matInput id="email">
+            </mat-form-field>
+            <br>
+        </div>
+        <div class="userData">
+            <mat-form-field class="mat-input" appearance="fill">
+                <mat-label>Username</mat-label>
+                <input matInput id="username">
+            </mat-form-field>
+            <br>
+        </div>
+        <div class="userData">
+            <mat-form-field class="mat-input" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput id="password">
+            </mat-form-field>
+            <br>
+        </div>
+        <hr>
+        <div class="card-footer">
+        <button mat-raised-button (click)="onRegister()">Register</button>
+    </div>
+    </mat-card>
+</div>
+
+

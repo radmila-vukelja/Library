@@ -1,0 +1,28 @@
+<div class="container-1">
+    <div class="container">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Log in</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-form-field class="mat-input" appearance="fill">
+                    <mat-label>Username</mat-label>
+                    <input matInput id="usernameInput">
+                </mat-form-field>
+                <br>
+                <mat-form-field class="mat-input" appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input matInput id="passwordInput">
+                </mat-form-field>
+                <br>
+                <button (click)="onLogin()">Log in</button>
+                <br>
+                <mat-card-footer>
+                    <label style="font-size: x-small;" (click)="onRegister()">Register</label>
+                    <label style="font-size: x-small;" (click)="openDialog()">Reset password</label>
+                </mat-card-footer>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+

@@ -1,0 +1,22 @@
+<div class="container">
+   <mat-card>
+       <mat-card-title style="font-size: small;">{{ book.title }}</mat-card-title>
+       <mat-card-subtitle style="font-size: small;">{{ book.author }}</mat-card-subtitle>
+       <hr>
+       <mat-card-content>
+           <div class="content-left">
+            <img src="{{ book.imageUrl }}" >
+           </div>
+           <div class="content-right">
+               <label style="font-size: smaller;">Publisher: {{ book.publisher }} </label>
+           </div>
+       </mat-card-content>
+       <hr>
+       <mat-card-footer>
+        <button  (click)="clickSeeMore(book)">See more</button>
+        <button mat-icon-button aria-label="Add to favorites">
+            <mat-icon>favorite</mat-icon>
+          </button>
+       </mat-card-footer>
+   </mat-card>
+</div>

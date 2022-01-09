@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  max-height: 300px;
+}
+
+.container-1{
+  height:100%;
+  display: flex;
+  justify-content: center;
+}
+
+mat-card{
+  display: flex;
+  color: whitesmoke;
+  flex-direction: column;
+  align-items: center;
+  background-color:rgba(0, 88, 175, 0.568);
+}
+
+button {
+  border: none;
+  width: 200px;
+  height: 35px;
+  background-color:rgba(0, 88, 175, 0.568);
+  color:whitesmoke;
+  
+}
+
+mat-card-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15px;
+}
+
+label {
+  border:solid;
+  border-width: 1px;
+  padding: 3px;
+  margin: 3px;
+  width: 80px;
+  text-align: center;
+}
+

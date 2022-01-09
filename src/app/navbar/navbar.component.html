@@ -1,0 +1,10 @@
+<mat-toolbar>
+    <span class="nav" (click)="clickLibrary()">Biblioteka</span>
+    <button class="regUsers" (click)="clickRegUsers()">Registered users</button>
+    <span class="spacer"></span>
+    <span *ngIf="isUserLoggedIn()">
+        <span class="welcome" >{{ getUsername() }}</span>
+        <button mat-icon-button (click)="clickProfile(loggedUser)"><mat-icon>person</mat-icon></button>
+        <button class="logOut" (click)="clickLogOut()">Log out</button>
+    </span>
+</mat-toolbar>

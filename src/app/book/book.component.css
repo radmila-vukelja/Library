@@ -1,0 +1,46 @@
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+mat-card-subtitle{
+    color:rgba(0, 88, 175, 0.568);
+}
+
+mat-card {
+    width: 200px;
+    height: 300px;
+    border-color:rgba(0, 88, 175, 0.568);
+    background-color: whitesmoke;
+    color:rgba(0, 88, 175, 0.568);
+   
+}
+
+mat-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 15px;
+}
+
+content-right {
+    display: flex;
+    flex-direction: row;
+}
+
+mat-card-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+img {
+    display: flexbox;
+    height: 150px;
+    
+}

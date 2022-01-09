@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+mat-card{
+    width: 300px;
+}
+
+.userData {
+    display: flex;
+    justify-content: center;
+}
+
+.mat-input {
+    width: 270px;
+    
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 150px;
+}
+
+mat-card-header {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color:rgb(59, 129, 199);
+    margin-top: 10px;
+}

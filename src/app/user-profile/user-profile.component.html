@@ -1,0 +1,93 @@
+<div class="header">
+    <button mat-button-icon class="back" (click)="onBack()"><mat-icon>arrow_back</mat-icon></button>
+    <h1>Profile details</h1>
+</div>
+<hr>
+<div class="container">
+    <div class="user-details-left">
+        <div class="user-detail">
+            Id:
+        </div>
+        <div class="user-detail">
+            Username:
+        </div>
+        <div class="user-detail">
+            First name:
+        </div>
+        <div class="user-detail">
+            Last name:
+        </div>
+        <div class="user-detail">
+            Date of birth:
+        </div>
+        <div class="user-detail">
+            Email:
+        </div>
+        <div class="user-detail">
+            Password:
+        </div>
+        </div>
+        <div class="user-details-right">
+            <div class="detail">
+                {{ loggedUser.userId }}
+            </div>
+            <div class="detail">
+                {{ loggedUser.username }}
+                <span>
+                    <input class="updateData">
+                </span>
+                <span>
+                    <button class="updating">Change username</button>
+                </span>
+            </div>
+            <div class="detail">
+                {{ loggedUser.firstName }}
+                <span>
+                    <input class="updateData">
+                </span>
+                <span>
+                    <button class="updating">Change name</button>
+                </span>
+            </div>
+            <div class="detail">
+                {{ loggedUser.lastName }}
+                <span>
+                    <input class="updateData">
+                </span>
+                <span>
+                    <button class="updating">Change surname</button>
+                </span>
+            </div>
+            <div class="detail">
+                {{ loggedUser.dateOfBirth | date }}
+
+            </div>
+            <div class="detail">
+                {{ loggedUser.email }}
+                <span>
+                    <input class="updateData">
+                </span>
+                <span>
+                    <button class="updating">Change e-mail</button>
+                </span>
+
+            </div>
+            <div class="detail">
+                {{ loggedUser.password }}
+                <span>
+                    <input class="updateData">
+                </span>
+                <span>
+                    <button class="updating">Change password</button>
+                </span>
+            </div>
+    </div>
+
+</div>
+
+<!--
+
+
+
+
+-->

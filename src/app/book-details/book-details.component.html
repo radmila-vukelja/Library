@@ -1,0 +1,46 @@
+<button mat-flat-button (click)="clickBack()">
+    <mat-icon>arrow_back</mat-icon>
+</button>
+<div class="fullView">
+    <div class="container">
+        <div class="head">
+            <div class="headUp">
+                <h2>{{ detsBookObj.title }}</h2>
+                <button mat-icon-button aria-label="Add to favorites" (click)="onFavorite()">
+                    <mat-icon>favorite</mat-icon>
+                </button>
+            </div>
+            <label>{{ detsBookObj.author }}</label>
+            <hr>
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <img src="{{ detsBookObj.imageUrl }}">
+            </div>
+            <div class="content-center">
+                <div class="properties">
+                    <label class="property">Publisher: </label>
+                    <br>
+                    <label class="property-value">{{ detsBookObj.publisher }}</label>
+                </div>
+                <div class="properties">
+                    <label class="property">Number of pages: </label>
+                    <br>
+                    <label class="property-value">{{ detsBookObj.pageNumber }}</label>
+                </div>
+                <div class="properties">
+                    <label class="property">Genre: </label>
+                    <br>
+                    <label class="property-value">{{ detsBookObj.genre }}</label>
+                </div>
+            </div>
+            <div class="content-right">
+                <label class="property">Description: </label>
+                <p>{{ detsBookObj.description }}</p>
+            </div>
+            <hr>
+
+        </div>
+
+    </div>
+</div>
